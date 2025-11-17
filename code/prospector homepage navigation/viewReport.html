@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Review Report</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inria+Serif:wght@300;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<div class="main-container">
+
+  <!-- HEADER -->
+  <header class="header">
+    <button class="icon-button" onclick="history.back()">
+      <svg width="48" height="48" viewBox="0 0 24 24" stroke="currentColor" fill="none" stroke-width="2">
+        <polyline points="15 18 9 12 15 6"></polyline>
+      </svg>
+    </button>
+
+    <h1 class="header-title">@Name Report @Name</h1>
+
+    <div style="width:48px"></div>
+  </header>
+
+  <div class="divider"></div>
+
+  <!-- PAGE CONTENT -->
+  <div class="report-content">
+
+    <label class="report-label">Description of Report</label>
+
+    <textarea class="report-textbox">Description of report</textarea>
+
+    <div class="report-options">
+
+      <label class="report-option">
+        <input type="radio" name="reason">
+        <span>Inappropriate</span>
+      </label>
+
+      <label class="report-option">
+        <input type="radio" name="reason">
+        <span>Rude</span>
+      </label>
+
+      <label class="report-option">
+        <input type="radio" name="reason">
+        <span>Harassment</span>
+      </label>
+
+      <label class="report-option">
+        <input type="radio" name="reason">
+        <span>Misinformation</span>
+      </label>
+
+      <label class="report-option">
+        <input type="radio" name="reason">
+        <span>Legal Issue</span>
+      </label>
+
+      <label class="report-option">
+        <input type="radio" name="reason">
+        <span>Harmful/Dangerous</span>
+      </label>
+
+      <label class="report-option">
+        <input type="radio" name="reason">
+        <span>Other:</span>
+        <input type="text" class="report-other-input">
+      </label>
+
+    </div>
+
+    <!-- BUTTONS -->
+    <div class="review-buttons">
+      <button class="dismiss-btn" onclick="window.location.href='reports.html'">
+  Dismiss
+</button>
+
+      <button class="punish-btn" onclick="window.location.href='punish.html'">
+  Punish
+</button>
+
+    </div>
+
+  </div>
+
+</div>
+
+</body>
+</html>

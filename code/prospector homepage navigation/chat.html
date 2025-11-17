@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI Chatbot</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inria+Serif:wght@300;700&display=swap" rel="stylesheet">
+</head>
+
+<body class="chat-page">
+
+  <!-- TOP BAR -->
+  <header class="chat-header">
+    <button class="back-btn" onclick="history.back()">
+      &#8592;
+    </button>
+
+    <h1 class="chat-title">AI Chatbot</h1>
+
+    <a href="threads.html" class="profile-btn">
+      <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <path d="M12 12a5 5 0 1 0-5-5 5 5 0 0 0 5 5Zm0 2c-4 0-7 2-7 4v2h14v-2c0-2-3-4-7-4Z"/>
+      </svg>
+    </a>
+  </header>
+
+  <!-- MAIN CONTENT -->
+  <main class="chat-main">
+    <img src="https://c.animaapp.com/mi30rt0yuyFXmE/img/icon.svg" class="chat-icon" alt="Icon">
+    <h2 class="chat-question">How Can I Help You Today?</h2>
+  </main>
+
+  <!-- BOTTOM BAR -->
+  <footer class="chat-bottom">
+    <button class="plus-btn">+</button>
+    <div class="input-bubble">New Chat</div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

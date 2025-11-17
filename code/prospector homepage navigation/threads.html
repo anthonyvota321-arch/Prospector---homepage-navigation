@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Threads</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Uses your global CSS (NOT threads.css anymore) -->
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inria+Serif:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div class="main-container">
+
+    <!-- HEADER -->
+    <header class="header">
+      <button id="back-button" class="icon-button">
+        <svg width="48" height="48" viewBox="0 0 24 24" stroke="currentColor" fill="none" stroke-width="2">
+          <polyline points="15 18 9 12 15 6"></polyline>
+        </svg>
+      </button>
+
+      <h1 class="header-title">Threads</h1>
+
+      <button id="filter-button" class="icon-button">
+        <svg width="48" height="48" viewBox="0 0 24 24" stroke="currentColor" fill="none" stroke-width="2">
+          <polygon points="3 4 21 4 14 14 14 20 10 18 10 14"></polygon>
+        </svg>
+      </button>
+    </header>
+
+    <div class="divider"></div>
+
+    <!-- THREAD LIST -->
+    <div id="threads-container" class="threads-container">
+      <!-- JS inserts cards here -->
+    </div>
+
+  </div>
+
+  <script src="threads.js"></script>
+</body>
+</html>

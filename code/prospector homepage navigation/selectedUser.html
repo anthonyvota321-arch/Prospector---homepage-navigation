@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>User Details</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inria+Serif:wght@300;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="selectedUser.css">
+</head>
+
+<body>
+
+<div class="container">
+
+  <!-- HEADER -->
+  <header class="header">
+    <button class="back-btn" onclick="window.location.href='adminpanel.html'">&#8592;</button>
+    <h1 class="username">@Username##</h1>
+
+    <button class="profile-icon">
+      <svg width="48" height="48" viewBox="0 0 24 24" fill="none"
+           stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M16 7a4 4 0 1 1-8 0 4 4 0 0 1 8 0Z"></path>
+        <path d="M6 21v-2a6 6 0 1 1 12 0v2"></path>
+      </svg>
+    </button>
+  </header>
+
+  <div class="divider"></div>
+
+  <!-- EMAIL -->
+  <p class="email">Email: Blahblahblah@something.com</p>
+
+  <!-- CHANGE USERNAME -->
+  <div class="username-box">
+    <input type="text" placeholder="New Username?" class="username-input">
+    <button class="clear-btn">✕</button>
+  </div>
+
+  <button class="change-username-btn">Change Username</button>
+
+  <!-- PROFILE ICON -->
+  <div class="profile-circle">
+    <svg width="130" height="130" viewBox="0 0 24 24" fill="none"
+         stroke="#4A3B8F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <circle cx="12" cy="7" r="4"></circle>
+      <path d="M5.5 21a8.38 8.38 0 0 1 13 0"></path>
+    </svg>
+  </div>
+
+  <button class="default-profile-btn">Set Default Profile</button>
+
+  <!-- BAN BUTTON -->
+  <button class="ban-btn" onclick="window.location.href='punish.html'">Ban</button>
+
+</div>
+
+</body>
+</html>

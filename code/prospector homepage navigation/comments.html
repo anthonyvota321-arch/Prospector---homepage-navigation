@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Comments</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inria+Serif:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+<div class="main-container">
+
+  <!-- HEADER -->
+  <header class="header">
+    <button id="back-button" class="icon-button">
+      <svg width="42" height="42" viewBox="0 0 24 24" stroke="currentColor" fill="none" stroke-width="2">
+        <polyline points="15 18 9 12 15 6"></polyline>
+      </svg>
+    </button>
+
+    <h1 class="header-title">Comments</h1>
+
+    <button class="icon-button">
+      <svg width="42" height="42" viewBox="0 0 24 24" stroke="currentColor" fill="none" stroke-width="2">
+        <polygon points="3 4 21 4 14 14 14 20 10 18 10 14"></polygon>
+      </svg>
+    </button>
+  </header>
+
+  <div class="divider"></div>
+
+  <!-- MAIN POST CARD -->
+  <div class="thread-card" style="background-color: #78aaff;">
+
+    <!-- User row -->
+    <div class="top-row">
+      <div class="row">
+        <!-- RESTORED PROFILE PICTURE -->
+        <div class="avatar" style="background-image:url('pfp.jpg');"></div>
+        <span class="username">@Name</span>
+      </div>
+
+      <div class="row">
+        <span class="badge">Apr 1, 2025</span>
+        <span class="badge">9:41 AM</span>
+        <!-- REPORT BUTTON ADDED HERE -->
+  <button class="report-inline-btn" onclick="window.location.href='report.html'">⚠️</button>
+
+
+      </div>
+    </div>
+
+    <!-- Title -->
+    <h2 class="title">Document Title</h2>
+
+    <!-- Comment + like/dislike row -->
+    <div class="action-row">
+
+      <div class="row">
+        <!-- Comment icon (same as threads page) -->
+        <svg width="42" height="42" stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24">
+          <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
+        </svg>
+        <span class="tag">##</span>
+      </div>
+
+      <!-- 👍 Like button as emoji -->
+      <div class="row">
+        <span style="font-size: 32px;">👍</span>
+        <span class="tag">##</span>
+      </div>
+
+      <!-- 👎 Dislike button as emoji -->
+      <div class="row">
+        <span style="font-size: 32px;">👎</span>
+        <span class="tag">##</span>
+      </div>
+
+    </div>
+
+    <!-- Comment input -->
+    <input type="text" placeholder="Comment" class="comment-box">
+  </div>
+
+  <!-- COMMENTS LIST -->
+  <div class="comments-container">
+
+    <!-- REPEATABLE COMMENT CARD -->
+    <div class="comment-card">
+      <div class="top-row">
+        <div class="row">
+          <div class="avatar" style="background-color:#dcd2ff;"></div>
+          <span class="username">@Name</span>
+        </div>
+
+        <div class="row">
+          <span class="badge">Apr 1, 2025</span>
+          <span class="badge">9:41 AM</span>
+        </div>
+      </div>
+
+      <p class="comment-text">
+        Description of Comment/Question
+      </p>
+    </div>
+
+    <!-- 4 more identical comment cards -->
+    <div class="comment-card">
+      <div class="top-row">
+        <div class="row">
+          <div class="avatar" style="background-color:#dcd2ff;"></div>
+          <span class="username">@Name</span>
+        </div>
+        <div class="row">
+          <span class="badge">Apr 1, 2025</span>
+          <span class="badge">9:41 AM</span>
+        </div>
+      </div>
+      <p class="comment-text">Description of Comment/Question</p>
+    </div>
+
+    <div class="comment-card">
+      <div class="top-row">
+        <div class="row">
+          <div class="avatar" style="background-color:#dcd2ff;"></div>
+          <span class="username">@Name</span>
+        </div>
+        <div class="row">
+          <span class="badge">Apr 1, 2025</span>
+          <span class="badge">9:41 AM</span>
+        </div>
+      </div>
+      <p class="comment-text">Description of Comment/Question</p>
+    </div>
+
+    <div class="comment-card">
+      <div class="top-row">
+        <div class="row">
+          <div class="avatar" style="background-color:#dcd2ff;"></div>
+          <span class="username">@Name</span>
+        </div>
+        <div class="row">
+          <span class="badge">Apr 1, 2025</span>
+          <span class="badge">9:41 AM</span>
+        </div>
+      </div>
+      <p class="comment-text">Description of Comment/Question</p>
+    </div>
+
+    <div class="comment-card">
+      <div class="top-row">
+        <div class="row">
+          <div class="avatar" style="background-color:#dcd2ff;"></div>
+          <span class="username">@Name</span>
+        </div>
+        <div class="row">
+          <span class="badge">Apr 1, 2025</span>
+          <span class="badge">9:41 AM</span>
+        </div>
+      </div>
+      <p class="comment-text">Description of Comment/Question</p>
+    </div>
+
+  </div>
+
+</div>
+
+<script>
+  document.getElementById("back-button").onclick = () => {
+    window.location.href = "threads.html";
+  };
+</script>
+
+</body>
+</html>
